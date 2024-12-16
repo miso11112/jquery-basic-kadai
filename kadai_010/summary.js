@@ -1,25 +1,18 @@
-$('div').on({
-    'click': () => {
-      
-      $('#target').css('color', 'red');
-    
-    },
-
-});
-
-$(function() {  
-$('p').text('Hello!');
-});
-
-$(function () {
-    // id属性がfadeOutの要素がクリックされたら
-    $('#fade-out').on('click', function() {
-      // フェードアウトする
-      $('p').fadeOut();
+$(document).ready(function() {
+    // クリックイベントに関連付け
+    $('#change-color').on('click', function() {
+        $('p').css('color', 'red'); // ボタンを押したときに色を変える
     });
-  });
 
-  $('#fade-in').on('click', function() {
-    // フェードインする
-    $('p').fadeIn();
-  });
+    $('#change-text-button').on('click', function() {
+        $('#text-to-change').text('Hello!');
+    });
+
+    $('#fade-out').on('click', function() {
+        $('p').fadeOut();
+    });
+
+    $('#fade-in').on('click', function() {
+        $('p').fadeIn();
+    });
+});
