@@ -1,7 +1,4 @@
-$(document).ready(function() {
-    // ボタンをクリックしたときのイベント
-    $('.btn').click(function() {
-        // メッセージを表示
-        $('.text-box').text('クリックしました！');
-    });
+$('.btn').click(function() {
+    // メッセージを表示
+    $('.text-box').val('クリックしました！');
 });
