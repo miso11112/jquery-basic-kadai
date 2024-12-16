@@ -4,9 +4,10 @@ $(document).ready(function() {
         $('p').css('color', 'red'); // ボタンを押したときに色を変える
     });
 
-    $('#change-text-button').on('click', function() {
-        $('#text-to-change').text('Hello!');
+    $('#change-text').on('ckick',function(){
+        $('#target').text('Hello!')
     });
+    
 
     $('#fade-out').on('click', function() {
         $('p').fadeOut();
