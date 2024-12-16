@@ -4,8 +4,8 @@ $(document).ready(function() {
         $('p').css('color', 'red'); // ボタンを押したときに色を変える
     });
 
-    $('#change-text').on('ckick',function(){
-        $('#target').text('Hello!')
+    $("#change-text").on("click", function () {
+        $("#target").text("Hello!");
     });
     
 
